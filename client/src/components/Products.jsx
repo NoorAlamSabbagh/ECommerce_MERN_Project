@@ -21,10 +21,10 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
          cat
-            ? `http://localhost:6500/api/products?category=${cat}`
-            : "http://localhost:6500/api/products"
-        );
-        setProducts(res.data);
+         ? `https://mern-ecommerce-i1w6.onrender.com/api/products?category=${cat}`
+         : "https://mern-ecommerce-i1w6.onrender.com/api/products"
+         );
+         setProducts(res.data);
       } catch (err) {}
     };
     getProducts();
@@ -33,13 +33,13 @@ const Products = ({ cat, filters, sort }) => {
   
   useEffect(() => {
     cat &&
-      setFilteredProducts(
+    setFilteredProducts(
         products.filter((item) =>
           Object.entries(filters).every(([key, value]) =>
             item[key].includes(value)
           )
         )
-      );
+        );
   }, [products, cat, filters]);
 
 useEffect(() => {
@@ -59,7 +59,7 @@ useEffect(() => {
   }, [sort]);
 
   return (
-     <Container>
+    <Container>
       {cat
         ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
         : products
@@ -73,4 +73,6 @@ export default Products
 
 
 
+  // : "http://localhost:6500/api/products"
 
+        // ? `http://localhost:6500/api/products?category=${cat}`
