@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://mern-ecommerce-i1w6.onrender.com/api/";
+const BASE_URL = "e-commerce-mern-project-api.vercel.app";
 // const BASE_URL = "http://localhost:6500/api/";
 // const TOKEN ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTg5NmU5Njk4OGZjNzhkZjlmZTgzYiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODMwMDI3MCwiZXhwIjoxNjg4NTU5NDcwfQ.2wvq4tDFuHPWHVYk9m3dHDoAqQ2Sxx8N2rVDiNU_khg";
 // const TOKEN = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.accessToken;

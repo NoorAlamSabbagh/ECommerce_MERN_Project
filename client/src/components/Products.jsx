@@ -21,8 +21,8 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
          cat
-         ? `https://mern-ecommerce-i1w6.onrender.com/api/products?category=${cat}`
-         : "https://mern-ecommerce-i1w6.onrender.com/api/products"
+         ? `e-commerce-mern-project-api.vercel.app/products?category=${cat}`
+         : "e-commerce-mern-project-api.vercel.app/products"
          );
          setProducts(res.data);
       } catch (err) {}
