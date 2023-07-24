@@ -1,18 +1,13 @@
 import { useLocation } from "react-router";
 
-
 const Success = () => {
-    const location = useLocation();
-    console.log(location)
-    return(
-        <div>
-            Successfull
-        </div>
-    )
-}
+  const location = useLocation();
+  console.log(location);
+  return <div>Successfull</div>;
+};
 
-    export default Success;
-    
+export default Success;
+
 /*
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
